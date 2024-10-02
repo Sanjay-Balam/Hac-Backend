@@ -10,7 +10,7 @@ app = FastAPI()
 genai.configure(api_key="AIzaSyA7KBSVOz1xTKq8-4oLczseKZ5ORVS0c88")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # React frontend URL
+    allow_origins=["http://localhost:3000"],  # React frontend URL
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
